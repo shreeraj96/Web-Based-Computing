@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSSG Showwaer - Shop your favorite shoes</title>
+
+  <!-- CSS FILE-->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+
+  
+
+  
+
+
+
+</head>
+<body>
+
+  
+  <!-- Navigation -->
+  <header role="banner">
+  <nav id="navbar-primary" class="navbar" role="navigation">
+    <div class="container-fluid">
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+        <ul class="nav navbar-nav">
+          <li><a class="active" href="main.html">Home</a></li>
+          <li><a class="active" href="Products.html">Products</a></li>
+          <li><a href="#"><img id="logo-navbar-middle" src="images/header-logo.png" width="200" alt="Logo Thing main logo"></a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </header><!-- header role="banner" -->
+    
+
+
+    
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/YeezyBoost350V2CreamWhite.jpeg" style="object-fit: contain; width:100%; height:400px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Jordan-11-Retro-Space-Jams-2016-Product.jpg" style="object-fit: contain; width:100%; height:400px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/PharrellNMD1.jpg" style="object-fit: contain; width:100%; height:400px;">
+      <div class="text"></div>
+    </div>
+
+
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" doot", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " doot";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+    </script>
+
+
+    <!-- Banner Ends Here -->
+
+    <!-- Featured Starts Here -->
+    <div class="feature">
+    <h2 style="text-align: center;">Featured Items </h2>
+    <div class="img">
+    <div class="row">
+
+      <div class="featured-item">
+      <div class="column">
+        <img src="images/YeezyBoost350V2CreamWhite.jpeg" alt="Yeezys"  style="object-fit: contain; width:100%; height:400px;">
+          <h4> <a class="active" href="Products.html#yeezy">Yeezy Boost 350 V2 Cream White/ Triple White</a></h4>
+          <h6>$255.00</h6>
+      </div>
+      </div>
+
+      <div class="featured-item">
+      <div class="column">
+        <img src="images/Jordan-11-Retro-Space-Jams-2016-Product.jpg" alt="Yeezys" style="object-fit: contain; width:100%; height:400px;">
+          <h4> <a class="active" href="Products.html#jam">Air Jordan 11 Retro 'Space Jam' 2016</a></h4>
+          <h6>$255.00</h6>
+      </div>
+      </div>
+
+      <div class="featured-item">
+      <div class="column">
+        <img src="images/PharrellNMD1.jpg" alt="Yeezys" style="object-fit: contain; width:100%; height:400px;">
+          <h4> <a class="active" href="Products.html#nmd">Pharrell x Billionaire Boys Club x NMD Human Race Trail 'BBC'</a></h4>
+          <h6>$265.00</h6>
+      </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+    <!-- Count down Starts Here -->
+
+<style> 
+.body{ 
+    text-align: center; 
+    background: white; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+} 
+h1{ 
+  color: red; 
+  font-weight: 100; 
+  font-size: 40px; 
+  margin: 40px 0px 20px; 
+} 
+h2{ 
+  color: red; 
+  font-weight: 100; 
+  font-size: 40px; 
+  margin: 40px 0px 20px; 
+} 
+ #clockdiv{ 
+    font-family: sans-serif; 
+    color: white; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 30px; 
+} 
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: red; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: white; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
+</style> 
+</head> 
+<body> 
+<div class="body">
+<h1 style="text-align: center;">Upcoming Release</h1>
+<h2 style="text-align: center;">Air Jordan 1 "Travis Scott"</h2>
+<a href="https://www.nike.com/launch/t/air-jordan-1-high-travis-scott/" target="_blank"><img id="logo-navbar-middle" src="images/travis.png" align="middle" width="400" alt="Logo Thing main logo"></a>
+<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext" style="color: white;">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext" style="color: white;">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext" style="color: white;">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext" style="color: white;">Seconds</div> 
+  </div> 
+</div> 
+  
+<p id="demo"></p> 
+</div>
+  
+<script> 
+  
+var deadline = new Date("May 11, 2019 07:00:00").getTime(); 
+  
+var x = setInterval(function() { 
+  
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+document.getElementById("day").innerHTML =days ; 
+document.getElementById("hour").innerHTML =hours; 
+document.getElementById("minute").innerHTML = minutes;  
+document.getElementById("second").innerHTML =seconds;  
+if (t < 0) { 
+        clearInterval(x); 
+        document.getElementById("demo").innerHTML = "TIME UP"; 
+        document.getElementById("day").innerHTML ='0'; 
+        document.getElementById("hour").innerHTML ='0'; 
+        document.getElementById("minute").innerHTML ='0' ;  
+        document.getElementById("second").innerHTML = '0'; } 
+}, 1000); 
+</script> 
+    
+<!-- Footer -->
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank" style="margin-left: 630px;"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+<a href="https://www.google.com" class="fa fa-google" target="_blank"></a>
+<a href="#"><img id="logo-navbar-middle" src="images/header-logo.png" width="200" alt="Logo Thing main logo"></a>
+<a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+
+
+
+</body>
+</html>
